@@ -19,7 +19,7 @@ The regular study time (Regelstudienzeit) for physiks is 5 years. But I spent 2 
 <img src="./bild01.jpg" width="33%"> <img src="./bild13.jpg" width="32%"> <img src="./bild03.jpg" width="33%">
 
 
-The diploma system does not have a mayor and minor part. You are only required to study an additional subject for one semester. I chose **physical chemistry** (Physikalische Chemie) by Prof. Rademann in 2001 with a practica (many experiments and lab reports) over the summer break. This was really fun!
+The diploma system does not have a major and minor part. You are only required to study an additional subject for one semester. I chose **physical chemistry** (Physikalische Chemie) by Prof. Rademann in 2001 with a practice (many experiments and lab reports) over the summer break. This was really fun!
 
 <img src="./bild14.jpg" width="49%"> <img src="./bild28.jpg" width="49%">
 
@@ -47,7 +47,7 @@ My teaching degree brought me to Saigon in Vietnam, but I only taught in German 
 
 From a certain perspective I was successful with my teaching. In IB Physics at the AISVN we never had an SL student receive 6 points, and only one time in the past a student had received 6 points on HL higher level. No one ever got 7 points. I wanted to change that. 
 
-My first 2-year course started in 2018, and the results of 2020 were remarkable All 15 students passed, both SL and HL. And some students received 6 and 7 points as their IB score, both HL and SL. Usually the best subject at AISVN is _IB Vietnamese Literature_ with an average slightly above 6 points, and for obvious reasons. But in 2020 the best subject was **IB Physics HL** with an average of **6.5 IB points**! Two students scored 6 points, two students scored 7 points. I am very proud of my students!
+My first 2-year course started in 2018, and the results of 2020 were remarkable. All 15 students passed, both SL and HL. And some students received 6 and 7 points as their IB score, both HL and SL. Usually the best subject at AISVN is _IB Vietnamese Literature_ with an average slightly above 6 points, and for obvious reasons. But in 2020 the best subject was **IB Physics HL** with an average of **6.5 IB points**! Two students scored 6 points, two students scored 7 points. I am very proud of my students!
 
 The work at SSIS was also both challenging and rewarding. In 2022-2023 I supervised 2 ASAs (after school activities): The **SSIS Robotics club** with VEX V5 and the game developer club **Unity Impact**. At the end of the year we also absorbed the remaining students of the **Girls Code** club into our Unity Impact club.
 
@@ -69,21 +69,23 @@ Now it's time for me to improve my Vietnamese. I have lived in this country for 
 
 ## Ngành Tiếng Việt và Văn hóa Việt Nam - 4 years
 
-I started applying for _Ngành Tiếng Việt và Văn hóa Việt Nam_ (Vietnamese Language and Culture of Vietnam) at the _Trường Đại học Sư phạm TP. Hồ Chí Minh_ (Su Pham university) since May 2024, but the requirements to start this course were not met. The course is intended for 20 students, the university required at least 15 students to sign up. By October 2024 we were only 7 Students.
+I started applying for _Ngành Tiếng Việt và Văn hóa Việt Nam_ (Vietnamese Language and Culture of Vietnam) at the _Trường Đại học Sư phạm TP. Hồ Chí Minh_ (Su Pham university) since May 2024, but the requirements to start this course were not met. The course is intended for 20 students, the university requires at least 15 students to sign up. By October 2024 we were only 7 Students.
 
-In 2025 the requirements were lowered to at least 10 students, but by the end of the signup period in July 2025 we were only 3 students. September 1st we were 4, and Ms. Tân could convince the board of directors to start the course anyway. **It worked**, we are now Tân Sinh Viên Khóa 51 of 7220101. My student ID is 51.01.615.002. The opening ceremony on September 21st was only attend by 2 of our students, the others were still in Korea and China. In October 2025 we have already **7 students**! I went to Cambodia for 2 weeks to get my 1-year visa.
+In 2025 the requirements were lowered to at least 10 students, but by the end of the signup period in July 2025 we were only 3 students. September 1st we were 4, and Ms. Tân could convince the board of directors to start the course anyway. **It worked**, we are now Tân Sinh Viên Khóa 51 of 7220101. My student ID is 51.01.615.002. The opening ceremony on September 21st was only attended by 2 of our students, the others were still in Korea and China. In October 2025 we have already **7 students**! I went to Cambodia for 2 weeks to get my 1-year visa.
 
 It will take 4 years to receive my **bachelor degree** (bằng cử nhân). The story continues until 2029. By then I will have spent 26 years as a student, almost 50% of my life!
 
 ## Preparation while in Cambodia
 
-Since October 2023 I enjoyed studying in the coffee of the ground floor of the [RS II Guesthouse, Phnom Penh.](https://maps.app.goo.gl/p6rpRjhfCU3gRPHq7) It was named **Cafe TodaY**. But for 2 months it is already a new restaurant.
+Since October 2023 I enjoyed studying in the cafe on the ground floor of the [RS II Guesthouse, Phnom Penh.](https://maps.app.goo.gl/p6rpRjhfCU3gRPHq7) It was named **Coffee TodaY**. But for 2 months it is already a new restaurant.
 
 ![Coffee Today](./coffee_today.jpg)
 
-<img src="./logo_outside.jpg" width="20%" align="right">
+<img src="./logo_outside.jpg" width="17%" align="right">
 
-The new restaurant is not yet on Google. And from outside it is difficult to see that you can enter the second floor and the A/C area. I figured it out on October 17th and spent the next 3 days there almost the whole time by myself. I got things done. And tried to publish this place on Google Maps. Let's start with the name:
+The new restaurant is not yet on Google. And from outside it is difficult to see that you can enter the second floor and the A/C area. I figured it out on October 17th and spent the next 3 days there almost the whole time by myself. I got things done. 
+
+Then I tried to publish this place on Google Maps. Let's start with the name:
 
 ### SPECIALITY IN PORK - បាយ សាច់ជ្រូកជាតិ
 
@@ -91,7 +93,7 @@ I have no idea how to enter Cambodian or Khmer characters with my keyboard. This
 
 ![Front 2025](./front2025.jpg)
 
-The Wifi is named BAY SACH JRUK CHEAT while Google translate reads **bay sach chrouk cheate** for បាយ សាច់ជ្រូកជាតិ. Here is the explanatioin from ChatGPT:
+The Wifi is named BAY SACH JRUK CHEAT while Google translate reads **bay sach chrouk cheate** for បាយ សាច់ជ្រូកជាតិ. Here is the explanation from ChatGPT:
 
 The Khmer phrase **បាយ សាច់ជ្រូកជាតិ** (bai sach chruk cheat) can be broken down like this:
 
@@ -104,4 +106,4 @@ So, បាយ សាច់ជ្រូកជាតិ means:
 
 It could appear on a menu to emphasize that the pork is _from Cambodia_ rather than imported.
 
-So, that's ChaptGPT. Now it's [on Google Maps](https://maps.app.goo.gl/ek9uA85bQSyQaoqt6) too.
+So, that's ChaptGPT. Now it's [on Google Maps](https://maps.app.goo.gl/ek9uA85bQSyQaoqt6) too. This is the place I wrote this post. And analyzed more than 1500 bank transactions from my old German bank account of the last 12 years.
