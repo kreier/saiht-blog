@@ -37,3 +37,9 @@ Wie ich feststellte, war ich nicht nur im Januar 2013 pleite, sondern selbst noc
 Mein Scott S60 Rennrad vom Oktober 2012 habe ich in 10 Monatsraten abgezahlt. Und mein **erstes MacBook Air** vom Januar 2014 habe ich in **18 Monatsraten** bis zum Juli 2015 abgezahlt, anders konnte ich es mir nicht leisten. Trotz Sonderpreis im Saturn Breverförde für "nur" 900 Euro. Die Januarrate am 17.1.2014 war die Zahlung, die das Konto **rot** werden lies, und es folgten weitere Rechnungen! 
 
 Damals habe ich selbst meine Miete erst in der Mitte des laufenden Monats bezahlt, manchmal auch _fast einen Monat später_! Das änderte sich endlich im Sommer 2015. Dann war die Überweisung Mitte des Monats automatisch für die Miete des nächsten Monats festgesetzt.
+
+## Warum PSD-Bank?
+
+Ende des letzten Jahrtausends, also etwa 1998, eröffnete die PSD Bank einen neuen Geldautomaten in der Niederlassung Potsdam der Deutschen Telekom AG in der Behlertstr. 3a. Ja, da habe ich mal gearbeitet. Als Promotion gab es ein Gewinnspiel, und ich habe tatsächlich gewonnen! Der Preis war ein 100 Mark Gutschein, aber natürlich nur einzulösen auf einem Konto der Bank. Und so habe ich eines eröffnet. Bis dahin waren meine Bankgeschäfte ausschließlich mit der Postbank getätigt worden.
+
+Weniger als 30 Jahre später arbeite ich schon lange nicht mehr dort, auch die Deutsche Telekom hat das Gebäude verlassen. Und seit 2025 gibt es auch die PSD Bank nicht mehr.
