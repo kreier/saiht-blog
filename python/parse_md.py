@@ -47,15 +47,13 @@ def check_folders(subfolders):
 def write_readme(path, content):
     # Define the output file name
     file_name = path / "README.md"
-
     try:
         # Open the file in write mode ('w'). 
         # Using 'utf-8' encoding is best practice for text files.
         with open(file_name, 'w', encoding='utf-8') as f:
             # Write the final combined string to the file
             f.write(content)
-        
-        print(f"\n✅ Successfully exported markdown data to {file_name}")
+        # print(f"\n✅ Successfully exported markdown data to {file_name}")
 
     except IOError as e:
         print(f"\n❌ Error writing file: {e}")
@@ -107,23 +105,70 @@ def list_events(events):
                     print(title_de)
                     df.loc[date, 'has_de'] = True
                     df.loc[date, 'title_de'] = title_de
-            # All events for this month have been parsed
+            # All events for this month have been parsed - L3
             # Now lets create a L3 summary README.md for the month
-            md_month = []
-            md_month.append(f"# {m_names[nr_month - 1]} {year} ({len(event)})")
-            md_month.append(" ")
+            md_string = []
+            md_string.append(f"# {m_names[nr_month - 1]} {year} ({len(list_events)})")
+            md_string.append(" ")
             for event in list_events:
                 date = event.replace("/", "-")
                 if df.loc[date, 'has_en']:
                     title = df.loc[date, 'title_en']
-                    md_month.append(f'### [{title}]("./{month[-2:]}")')
-                    md_month.append(" ")
+                    md_string.append(f'### [{title}](./{event[-2:]})')
+                    md_string.append(" ")
+                    md_string.append(f"Here will be a short summary or the first paragraph of the event. Guess I have to figure this out. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. [Continue reading ...](./{event[-2:]})")
+                    md_string.append(" ")
                 if df.loc[date, 'has_de']:
                     title = df.loc[date, 'title_de']
-                    md_month.append(f'### [{title}]("./{month[-2:]}")')
-                    md_month.append(" ")
-            md_month = "\n".join(md_month)
-            write_readme(Path(html_folder + "/" + month), md_month)
+                    md_string.append(f'### [{title}](./{event[-2:]})')
+                    md_string.append(" ")
+                    md_string.append(f"Here will be a short summary or the first paragraph of the event. Guess I have to figure this out. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. [Continue reading ...](./{event[-2:]})")
+                    md_string.append(" ")                    
+            md_string = "\n".join(md_string)
+            write_readme(Path(html_folder + "/" + month), md_string)
+        # L2 for all events of the year
+        # First, fix the index of the dataframe
+        df.index = pd.to_datetime(df.index, errors='coerce')
+        md_string = []
+        md_string.append(f"# Events {year} ({len(list_events)})")
+        md_string.append(" ")
+        for month in list_months:
+            nr_month = int(month[-2:])
+            target_month = month.replace("/", "-")
+            df_target = df.loc[target_month]
+            md_string.append(f"## [{m_names[nr_month - 1]}](./{month[-2:]}) ({len(df_target)})")
+            md_string.append(" ")
+            # no need to parse, the titles are already in the df
+            df_target = df.loc[target_month]
+            for date_key, row in df_target.iterrows():
+                str_mmdd = date_key.strftime('%m/%d')
+                if row['has_en']:
+                    md_string.append(f"- **{date_key.strftime('%Y-%m-%d')}** [{row['title_en']}](./{str_mmdd})")
+                    md_string.append(" ")
+                if row['has_de']:
+                    md_string.append(f"- **{date_key.strftime('%Y-%m-%d')}** [{row['title_de']}](./{str_mmdd})")
+                    md_string.append(" ")
+        md_string = "\n".join(md_string)
+        write_readme(Path(html_folder + "/" + year), md_string)
+    # Just the L1 is left - an updated README.md in the /html folder for Github
+    md_string = []
+    md_string.append(f"# Blog on saiht.de")
+    md_string.append(" ")
+    for year in years:
+        df_target = df.loc[year]
+        md_string.append(f"## {year} ({len(df_target)})")
+        md_string.append(" ")
+        for date_key, row in df_target.iterrows():
+            str_yyyymmdd = date_key.strftime('%Y/%m/%d')
+            if row['has_en']:
+                md_string.append(f"- **{date_key.strftime('%Y-%m-%d')}** [{row['title_en']}](./{str_yyyymmdd})")
+                md_string.append(" ")
+            if row['has_de']:
+                md_string.append(f"- **{date_key.strftime('%Y-%m-%d')}** [{row['title_de']}](./{str_yyyymmdd})")
+                md_string.append(" ")
+    md_string = "\n".join(md_string)
+    write_readme(Path(html_folder), md_string)
+                                     
 
 def export_to_csv(folder_list, output_file="folders.csv"):
     with open(output_file, mode="w", newline="", encoding="utf-8") as f:
@@ -145,6 +190,6 @@ if __name__ == "__main__":
 
     if check_folders(folders):
         list_events(events)
-    print(df)
+    # print(df)
     df.to_csv('list.csv')
     
