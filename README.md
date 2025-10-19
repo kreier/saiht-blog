@@ -3,7 +3,7 @@
 ![GitHub License](https://img.shields.io/github/license/kreier/saiht-blog)
 ![GitHub Release](https://img.shields.io/github/v/release/kreier/saiht-blog)
 
-Framework to generate saiht.de/blog structure in English and German.
+Framework to generate saiht.de/blog structure in English and German. See more [following this link](./html/).
 
 ## Structure
 

@@ -44,6 +44,22 @@ def check_folders(subfolders):
         print("*** Please fix his first ***")
         return False
 
+def write_readme(path, content):
+    # Define the output file name
+    file_name = path / "README.md"
+
+    try:
+        # Open the file in write mode ('w'). 
+        # Using 'utf-8' encoding is best practice for text files.
+        with open(file_name, 'w', encoding='utf-8') as f:
+            # Write the final combined string to the file
+            f.write(content)
+        
+        print(f"\n✅ Successfully exported markdown data to {file_name}")
+
+    except IOError as e:
+        print(f"\n❌ Error writing file: {e}")
+
 def get_title_event(file_path):
     with open(file_path, 'r', encoding='utf-8') as file:
         first_line = file.readline()
@@ -91,6 +107,23 @@ def list_events(events):
                     print(title_de)
                     df.loc[date, 'has_de'] = True
                     df.loc[date, 'title_de'] = title_de
+            # All events for this month have been parsed
+            # Now lets create a L3 summary README.md for the month
+            md_month = []
+            md_month.append(f"# {m_names[nr_month - 1]} {year} ({len(event)})")
+            md_month.append(" ")
+            for event in list_events:
+                date = event.replace("/", "-")
+                if df.loc[date, 'has_en']:
+                    title = df.loc[date, 'title_en']
+                    md_month.append(f'### [{title}]("./{month[-2:]}")')
+                    md_month.append(" ")
+                if df.loc[date, 'has_de']:
+                    title = df.loc[date, 'title_de']
+                    md_month.append(f'### [{title}]("./{month[-2:]}")')
+                    md_month.append(" ")
+            md_month = "\n".join(md_month)
+            write_readme(Path(html_folder + "/" + month), md_month)
 
 def export_to_csv(folder_list, output_file="folders.csv"):
     with open(output_file, mode="w", newline="", encoding="utf-8") as f:
