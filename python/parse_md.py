@@ -37,6 +37,9 @@ def check_folders(subfolders):
             invalid_folders.append(folder)
     if len(invalid_folders) == 0:
         print("valid.")
+        years.sort()
+        months.sort()
+        events.sort()
         return True
     else:
         print(f"found {len(invalid_folders)} invalid folders.")
