@@ -1,6 +1,6 @@
 # Parse the ../html folder year by year, month by month, day by day
 # Create index.html files from the README.md and LIESMICH.md in these folders
-# v25.10.02
+# v25.10.05
 
 import os, csv
 import pandas as pd
@@ -10,6 +10,7 @@ years  = []   # list of years  with events in "YYYY"
 months = []   # list of months with events in "YYYY/MM"
 events = []   # list of dates  for  events in "YYYY/MM/DD"
 m_names = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
+m_namen = ["Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember"]
 
 def list_subfolders(base_path):
     subfolders = []
@@ -54,7 +55,6 @@ def write_readme(path, content):
             # Write the final combined string to the file
             f.write(content)
         # print(f"\n✅ Successfully exported markdown data to {file_name}")
-
     except IOError as e:
         print(f"\n❌ Error writing file: {e}")
 
@@ -169,7 +169,6 @@ def list_events(events):
     md_string = "\n".join(md_string)
     write_readme(Path(html_folder), md_string)
                                      
-
 def export_to_csv(folder_list, output_file="folders.csv"):
     with open(output_file, mode="w", newline="", encoding="utf-8") as f:
         writer = csv.writer(f)
