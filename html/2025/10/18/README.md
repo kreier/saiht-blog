@@ -1,5 +1,12 @@
 # 12 years down - 4 more years to go
 
+---
+date_created: 2025-10-19
+last_updated: 2025-10-19
+tags:
+  - education
+---
+
 It's puzzling to realize how much time I spent to get an education. By 2025 I used 12 years of my life to get professional training, in addition to my 10 years of regular school attendance. That's right, I don't have a high school diploma (Abitur in Germany). But I taught high school kids and helped them improve their grades.
 
 ## Kommunikationselektroniker - 3 years
