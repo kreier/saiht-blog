@@ -47,6 +47,8 @@ In summer 2015 at the Didacta I realized that there are more then 200 Internatio
 - Turkey (now Türkiye), Ankara
 - Russia, Moscow
 
+I added my resume to the database. Offers from Belgium and Mexico reached me by email.
+
 ## Teaching in the English language - 5 years
 
 My teaching degree brought me to Saigon in Vietnam, but I only taught for 1 year in German. After that I worked 3 years for the **American International School Vietnam** and 2 years for the **Saigon South International School**. The topics span a variety of subjects and include the American curriculum, IB Diploma Program and AP Advanced Placement. For the IB and AP I received special training. Here is a list:
