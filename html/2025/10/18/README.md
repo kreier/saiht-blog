@@ -43,9 +43,10 @@ In summer 2015 at the Didacta I realized that there are more then 200 Internatio
 - India, Mumbai
 - Vietnam, Saigon or Ho Chi Minh City
 - Indonesia, Jakarta
-- Mexico, Mexico City
 - Turkey (now Türkiye), Ankara
 - Russia, Moscow
+
+I added my resume to the database. Offers from Belgium and Mexico reached me by email.
 
 ## Teaching in the English language - 5 years
 
