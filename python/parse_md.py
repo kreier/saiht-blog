@@ -142,10 +142,10 @@ def list_events(events):
             df_target = df.loc[target_month]
             for date_key, row in df_target.iterrows():
                 if row['has_en']:
-                    md_string.append(f"- {row['title_en']}")
+                    md_string.append(f"- **{date_key.strftime('%Y-%m-%d')}** {row['title_en']}")
                     md_string.append(" ")
                 if row['has_de']:
-                    md_string.append(f"- {row['title_de']}")
+                    md_string.append(f"- **{date_key.strftime('%Y-%m-%d')}** {row['title_de']}")
                     md_string.append(" ")
         md_string = "\n".join(md_string)
         write_readme(Path(html_folder + "/" + year), md_string)
@@ -153,9 +153,19 @@ def list_events(events):
     md_string = []
     md_string.append(f"# Blog on saiht.de")
     md_string.append(" ")
-    
-    # Events {year} ({len(list_events)})")
-    md_string.append(" ")
+    for year in years:
+        df_target = df.loc[year]
+        md_string.append(f"## {year} ({len(df_target)})")
+        md_string.append(" ")
+        for date_key, row in df_target.iterrows():
+            if row['has_en']:
+                md_string.append(f"- **{date_key.strftime('%Y-%m-%d')}** {row['title_en']}")
+                md_string.append(" ")
+            if row['has_de']:
+                md_string.append(f"- **{date_key.strftime('%Y-%m-%d')}** {row['title_de']}")
+                md_string.append(" ")
+    md_string = "\n".join(md_string)
+    write_readme(Path(html_folder), md_string)
                                      
 
 def export_to_csv(folder_list, output_file="folders.csv"):
