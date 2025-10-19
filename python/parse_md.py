@@ -44,6 +44,13 @@ def check_folders(subfolders):
         print("*** Please fix his first ***")
         return False
 
+def get_title_event(file_path):
+    with open(file_path, 'r', encoding='utf-8') as file:
+        first_line = file.readline()
+        if first_line.startswith('# '):
+            return first_line.lstrip('# ').strip()
+        return None    
+
 def list_events(events):
     print(f"In total there are {len(events)} events:")
     for year in years:
@@ -54,20 +61,36 @@ def list_events(events):
             print(f"  {m_names[nr_month - 1]}")
             list_events = [e for e in events if e.startswith(month + "/")]
             for event in list_events:
+                date = event.replace("/", "-")
+                df.loc[date] = [False, False, " ", " ", 0, 0, 0, 0]
                 folder = Path(html_folder + "/" + event)
                 print(f"    {event} ", end="")
                 readme = folder / "README.md"
                 liesmich = folder / "LIESMICH.md"
                 has_readme = readme.is_file()
                 has_liesmich = liesmich.is_file()
-                if has_readme and has_liesmich:
-                    print("✅ Both README.md and LIESMICH.md exist.")
-                elif has_readme and not has_liesmich:
-                    print("📘 Only README.md exists.")
-                elif not has_readme and has_liesmich:
-                    print("📗 Only LIESMICH.md exists.")
-                else:
+                if not has_readme and not has_liesmich:
                     print("❌ Neither README.md nor LIESMICH.md exist.")
+                elif has_readme and not has_liesmich:
+                    title_en = get_title_event(readme)
+                    print(title_en)
+                    df.loc[date, 'has_en'] = True
+                    df.loc[date, 'title_en'] = title_en
+                elif not has_readme and has_liesmich:
+                    title_de = get_title_event(liesmich)
+                    print(title_de)
+                    df.loc[date, 'has_de'] = True
+                    df.loc[date, 'title_de'] = title_de
+                else: # in case of both
+                    title_en = get_title_event(readme)
+                    print(title_en)
+                    df.loc[date, 'has_en'] = True
+                    df.loc[date, 'title_en'] = title_en
+                    print(f"    {event} ", end="")
+                    title_de = get_title_event(liesmich)
+                    print(title_de)
+                    df.loc[date, 'has_de'] = True
+                    df.loc[date, 'title_de'] = title_de
 
 def export_to_csv(folder_list, output_file="folders.csv"):
     with open(output_file, mode="w", newline="", encoding="utf-8") as f:
@@ -79,12 +102,16 @@ def export_to_csv(folder_list, output_file="folders.csv"):
 if __name__ == "__main__":
     html_folder = "../html"
     folders = list_subfolders(html_folder)
+    column_titles = ['has_en', 'has_de', 'title_en', 'title_de', 'images', 'words_en', 'words_de', 'other_files']
+    df = pd.DataFrame(columns=column_titles)
+    # Convert the index to a datetime index (optional, but good practice for dates)
+    df.index = pd.to_datetime(df.index)
+    df.index.name = 'Date'
+    df['has_en'] = df['has_en'].astype(bool)
+    df['has_de'] = df['has_de'].astype(bool)
+
     if check_folders(folders):
         list_events(events)
-    # print(folders)
-    # years = [f for f in folders if len(f) == 4]
-    # print(f"Number of different years: {len(years)}")
-    # for year in years:
-
-    # export_to_csv(folders)
-    # print(f"✅ Found {len(folders)} folders. List saved to folders.csv")
+    print(df)
+    df.to_csv('list.csv')
+    
