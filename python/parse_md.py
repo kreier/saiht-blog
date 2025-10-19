@@ -141,11 +141,12 @@ def list_events(events):
             # no need to parse, the titles are already in the df
             df_target = df.loc[target_month]
             for date_key, row in df_target.iterrows():
+                str_mmdd = date_key.strftime('%m/%d')
                 if row['has_en']:
-                    md_string.append(f"- **{date_key.strftime('%Y-%m-%d')}** {row['title_en']}")
+                    md_string.append(f"- **{date_key.strftime('%Y-%m-%d')}** [{row['title_en']}](./{str_mmdd})")
                     md_string.append(" ")
                 if row['has_de']:
-                    md_string.append(f"- **{date_key.strftime('%Y-%m-%d')}** {row['title_de']}")
+                    md_string.append(f"- **{date_key.strftime('%Y-%m-%d')}** [{row['title_de']}](./{str_mmdd})")
                     md_string.append(" ")
         md_string = "\n".join(md_string)
         write_readme(Path(html_folder + "/" + year), md_string)
@@ -158,11 +159,12 @@ def list_events(events):
         md_string.append(f"## {year} ({len(df_target)})")
         md_string.append(" ")
         for date_key, row in df_target.iterrows():
+            str_yyyymmdd = date_key.strftime('%Y/%m/%d')
             if row['has_en']:
-                md_string.append(f"- **{date_key.strftime('%Y-%m-%d')}** {row['title_en']}")
+                md_string.append(f"- **{date_key.strftime('%Y-%m-%d')}** [{row['title_en']}](./{str_yyyymmdd})")
                 md_string.append(" ")
             if row['has_de']:
-                md_string.append(f"- **{date_key.strftime('%Y-%m-%d')}** {row['title_de']}")
+                md_string.append(f"- **{date_key.strftime('%Y-%m-%d')}** [{row['title_de']}](./{str_yyyymmdd})")
                 md_string.append(" ")
     md_string = "\n".join(md_string)
     write_readme(Path(html_folder), md_string)
