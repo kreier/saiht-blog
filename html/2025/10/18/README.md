@@ -31,6 +31,10 @@ Teachers in Germany study for a **master of education** at universities. But tha
 
 I started my 'Referendariat' at the **Studienseminar Stade** in Lower Saxony. To save costs the state had reduced the training time to 1.5 years. While living in [Hofkoh](https://maps.app.goo.gl/PvuLH3SPogwbHaJb6), I was travelling to the [Studienseminar Lehramt an Gymnasien](https://maps.app.goo.gl/YxNtFVbhnGYUz6uA6) (45 kilometers), continued to the [Gymnasium Warstade](https://maps.app.goo.gl/D7gsmh1csmFUWzkD8) in Hemmoor (another 29 kilometers) and after a day of work with frequent visits to my lectures traveled the 56 kilometers back home on most days of the week. It was a stressful time 2012/08 - 2014/01.
 
+<img src="./20120801.jpg" width="33%"> <img src="./2013-11-28.jpg" width="32%"> <img src="./2014-01-19.jpg" width="33%">
+
+Above the start on August 1st, 2012; Mathe Leistungskurs 12 und Abschlussveranstaltung 19. Januar 2014.
+
 ## Teaching in the English language - 5 years
 
 My teaching degree brought me to Saigon in Vietnam, but I only taught in German for 1 year. After that I worked 3 years for the **American International School Vietnam** and 2 years for the **Saigon South International School**. The topics span a variety of subjects and include the American curriculum, IB Diploma Program and AP Advanced Placement. For the IB and AP I received special training. Here is a list:
@@ -47,7 +51,9 @@ My teaching degree brought me to Saigon in Vietnam, but I only taught in German 
 
 From a certain perspective I was successful with my teaching. In IB Physics at the AISVN we never had an SL student receive 6 points, and only one time in the past a student had received 6 points on HL higher level. No one ever got 7 points. I wanted to change that. 
 
-My first 2-year course started in 2018, and the results of 2020 were remarkable. All 15 students passed, both SL and HL. And some students received 6 and 7 points as their IB score, both HL and SL. Usually the best subject at AISVN is _IB Vietnamese Literature_ with an average slightly above 6 points, and for obvious reasons. But in 2020 the best subject was **IB Physics HL** with an average of **6.5 IB points**! Two students scored 6 points, two students scored 7 points. I am very proud of my students!
+My first 2-year course started in 2018, and the results of 2020 were remarkable. All 15 students passed, both SL and HL. And some students received 6 and 7 points as their IB score, both HL and SL. Usually the best subject at AISVN is _IB Vietnamese Literature_ with an average slightly above 6 points, and for obvious reasons. But in 2020 the best subject was **IB Physics HL** with an average of **6.5 IB points**! Two students scored 6 points, two students scored 7 points. I am very proud of my students! AISVN was fun, see [post on twitter/X](https://x.com/matthiashcmc/status/1268213154460209153):
+
+![2020 AISVN on the roof with grade 9](./2020-06-03_AISVN.jpg)
 
 The work at SSIS was also both challenging and rewarding. In 2022-2023 I supervised 2 ASAs (after school activities): The **SSIS Robotics club** with VEX V5 and the game developer club **Unity Impact**. At the end of the year we also absorbed the remaining students of the **Girls Code** club into our Unity Impact club.
 
